@@ -1,0 +1,21 @@
+{
+  "the-deniros":{
+    "name": "The Deniros",
+    "bio": "The Deniros are a five-piece psychedelic rock band from London who are making waves in the London music scene. Formed of Roberta, Sam, Hugo, Simon and Kristian, the band have formed a cult following after selling out shows across London. They supported music legend Cam Cole at the O2 Academy, Islington in 2024 and are making their Isle of Wight debut in 2025. The band have produced hit after hit with new single Cherry Train released in June 2025, following a catalogue of brilliant tracks, including Step No More and Squire.",
+    "imagePath": "/src/page-content/artist-images/The_Deniros.jpg",
+    "instagramHandle": "thedeniros"
+  },
+  "lenny":{
+    "name": "LENNY",
+    "bio": "LENNY is a 20-year-old pop singer-songwriter from Brighton, who crafts songs that explore themes of love, heartbreak, self-discovery, and the depth of the human experience. Fresh off the back of her SOLD OUT headline show at the Prince Albert in Brighton and recent radio support from Jodie Bryant on Voices Radio (Disc Live), the up-and-coming artist LENNY is back with her latest single “Where I Stand” following her previous release “What Comes Next”. “Where I Stand” is the third instalment to the Brighton-based artist’s EP “Something’s Not Nothing” which was released on the 23rd May 2025.",
+    "imagePath": "/src/page-content/artist-images/LENNY.jpg",
+    "instagramHandle": "lennyoxz"
+
+  },
+  "dance-the-conga": {
+    "name": "Dancing the conga",
+    "bio": "Dancing the conga are a Norwegian indie-newpunk trio making waves in both the London and Oslo music scenes. Their latest record, Trying to define newpunk blurs the lines between genres and makes for brilliant listening.",
+    "imagePath": "/src/page-content/artist-images/Dancing_The_Conga.jpg",
+    "instagramHandle": "dancingtheconga"
+  }
+}

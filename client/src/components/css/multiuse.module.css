@@ -1,0 +1,159 @@
+/* Page Content */
+.pageContent{
+  gap: 1.5em;
+  min-height: calc(100vh - 15.5em);
+  padding: 1em 3em;
+}
+
+/* Page Header */
+.header{
+  align-items: center;
+  justify-content: center;
+  margin-bottom: .5em;
+  max-height: fit-content;
+  text-align: center;
+}
+
+/* Page Element Container */
+.pageElement{
+  text-align: center;
+  min-height: fit-content;
+  margin-bottom: 1.5em;
+  width: 100%;
+}
+.pageElementRow{
+  display: flex;
+  flex-direction: row;
+  gap: 5em;
+}
+
+/* Navigation Button */
+.navButton{
+  background-color: #98af88;
+  border: none;
+  border-radius: 1em;
+  font-family: "Lato";
+  font-weight: 300;
+  margin-top: .5em;
+  max-width: fit-content;
+  min-width: 10em;
+  padding: .5em .75em;
+  text-align: center;
+}
+.navButton a{
+  font-size: 1.25em
+}
+.navButton:hover {
+  background-color: #98af8849;
+}
+
+/* Image Carousels */
+.carousel{
+  align-items: top;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1em 0;
+  overflow: scroll;
+}
+.carouselItem{
+  border-radius: 1em;
+  min-width: 9em;
+  padding: 0.5em;
+  text-align: center;
+}
+.carouselItem:hover{
+  background-color: rgba(255, 255, 255, 0.369);
+}
+.carouselItem img{
+  border-radius: 1em;
+  margin-bottom: .25em;
+  max-height: 20em;
+  max-width: 100%;
+}
+/* Artist/Venue Container Styles */
+.cardHolder {
+  align-items: top;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+}
+
+.dataCard {
+  border-radius: 1em;
+  box-sizing: content-box;
+  box-shadow: .5em .5em 1em #98af88;
+  height: fit-content;
+  justify-content: center;
+  padding: 1em;
+  text-decoration: none;
+  width: 25em;
+}
+
+.dataCard img {
+  width: 25em;
+  height: 20em;
+  object-fit: cover;
+  border-radius: 1em;
+  margin-bottom: 1em;
+}
+
+.dataCard p{
+  margin-bottom: .5em;
+}
+
+/* All Venues Map */
+.allVenuesMap{
+  align-items: center;
+  box-shadow: 1em 1em 1em #98af88;
+  height: calc(100vh - 15em);
+  width: 100%;
+}
+
+/* Map Marker Popups */
+.markerPopup h4 {
+  padding-bottom: 0.25em;
+}
+.markerPopup p{
+  padding: .1em 0;
+  margin: 0;
+}
+
+/* Mobile */
+@media only screen and (max-width: 428px) {
+  .allVenuesMap{
+    height: 20em;
+  }
+  .cardHolder{
+    display: block;
+    height: fit-content;
+    align-content: center;
+  }
+  .dataCard{
+    font-size: .9em;
+    margin-left: .5em;
+    margin-bottom: 1em;
+    max-width: 80vw;
+  }
+  .dataCard img{
+    max-width: inherit;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 428px) {
+  .pageContent{
+    min-height: 500px;
+    padding: .5em 1em;
+  }
+  .pageElement{
+    height: fit-content;
+  }
+  .navButton:focus{
+    font-weight: 600;
+  }
+  .dataCard img{
+    max-height: 15em;
+  }
+}

@@ -1,0 +1,68 @@
+/* Core Body Elements */
+/* Set the basic styling of the page */
+body{
+  background-image: linear-gradient(to bottom, #98af88, white); 
+  color: #000;
+  font-family: "Lato";
+  margin: 0;
+}
+/* Fonts */
+/* Set the style of each of the fonts */
+h1, h2, h3, h4{
+  font-family: "DM Serif Display";
+  margin: 0;
+}
+h5, p, a{
+  font-family: "Lato";
+  margin: 0;
+}
+/* h1 - used for page and panel headings and footer */
+h1{
+  font-size: 2.5em;
+}
+/* h2 -used for the data card heading */
+h2{
+  font-size: 2em;
+}
+/* h3 - used for the image carousels and sign in already signed up */
+h3{
+  font-size: 1.75em;
+}
+/* h4 - used for mission element header and marker popup */
+h4{
+  font-size: 1.25em;
+  padding: .2em 0;
+}
+/* h5 - used for subheadings */
+h5{
+  font-size: 1.2em;
+  font-weight: 400;
+}
+/* a - used for hyperlinks, p - used for main body text */
+a, p {
+  color: black;
+  font-size: 1.1em;
+  font-weight: 300;
+  text-decoration: none;
+}
+/* ul - used for the header bar list items */
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 428px) {
+  a, p, h5{
+    font-size: 1em;
+  }
+  h1{
+    font-size: 1.6em;
+  }
+  h2, h3, h4{
+    font-size: 1.3em;
+  }
+  h3{
+    padding-top: .2em;
+  }
+}

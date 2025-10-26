@@ -1,0 +1,26 @@
+{
+  "the-marquis":{
+    "address": ["51-52 Chandos Place", "London", "WC2N 4HS"],
+    "artistLineup": "",
+    "bio": "The Marquis is a must-visit London pub, located just minutes from many iconic landmarks. The Marquis has become a vinyl-lover's haven, boasting a vast collection that rivals any record shop. The pub is also a vibrant hub for live music that supports local talent, featuring musicians, bands, and DJs five nights a week. Known for its incredible unforgettable moments, The Marquis made history in 2023 with a surprise Green Day gig. With a lively, welcoming atmosphere, The Marquis is the perfect spot for anyone in search of great music, great food, and a warm smile (and an even better pint of Guinness!)",
+    "coordinates": [51.5098, -0.1258],
+    "imagePath": "/src/page-content/venue-images/marquis.jpg",
+    "name": "The Marquis"
+  },
+  "the-water-rats": {
+    "address": ["328 Grays Inn Rd", "London", "WC1X 8BZ"],
+    "artistLineup": "",
+    "bio":"The Water Rats is an iconic location in the heart of London. The venue has a prestigious history including Bob Dylan's first UK gig in 1962, The Pogues first gig in 1982 and Oasis' first London gig in 1994, along with a roll call of other household names throughout the years from Katy Perry to The Courteeners to Ra Ra Riot. It's the perfect place to catch your favourite new artist while enjoying the brilliant food and drink  The Water Rats has to offer",
+    "coordinates": [51.529416, -0.120011],
+    "imagePath": "/src/page-content/venue-images/water_rats.jpg",
+    "name": "The Water Rats"
+  },
+  "hope-and-anchor": {
+    "address": ["207 Upper Street", "London", "N1 1RL"],
+    "artistLineup": "",
+    "bio": "The Hope and Anchor has seen some incredible artists through its doors through the years, from Madness to Joy Division. The recently refurbished Grade II listed building is famed amongst the London music scene for showcasing some of the best new artists the city has to offer. From heavy metal bands to tribute acts, sit back with an ice cold drink and enjoy the music.",
+    "coordinates": [51.543341, -0.103431],
+    "imagePath": "/src/page-content/venue-images/hope_anchor.jpg",
+    "name": "Hope & Anchor"
+  }
+}

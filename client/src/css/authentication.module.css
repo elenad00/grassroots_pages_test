@@ -1,0 +1,163 @@
+@keyframes fade {
+  0%, 100% { opacity: 0 }
+  50% { opacity: 1 }
+}
+
+/* Sign In */
+.signinContainer{
+  height: 100%;
+} 
+.signinContainer p{
+  padding: 1em;
+  text-align: center;
+}
+.emailContainer,
+.oauthContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
+  padding: .5em 0;
+}
+
+/* Email Container */
+.createUser,
+.emailContainer form{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.emailContainer input,
+.createUserElement input,
+.accountType {
+  background-color: white;
+  border: .2em solid white;
+  border-radius: 1em;
+  font-family: "Lato";
+  font-size: 1.25em;
+  padding: 0 .5em;
+  min-width: 12em;
+}
+.emailContainer form button,
+.createUser button,
+.signOutButtons button{
+  background-color: #98af88;
+  border: none;
+  border-radius: 1em;
+  display: grid;
+  font-family: "Lato";
+  font-size: 1.1em;
+  padding: .5em;
+  margin-top: .5em;
+  max-width: fit-content;
+  min-width: 10em;
+  text-align: center;
+}
+.emailContainer button:hover,
+.oauthContainer div button:hover,
+.createUser button:hover,
+.signOutButtons button:hover {
+  background-color: #b9c9ae;
+  cursor: pointer;
+}
+/* OAuth Container */
+.oauthContainer div {
+  justify-content: space-between;
+}
+.oauthContainer div button {
+  background: none;
+  border: none;
+  border-radius: 1em;
+  margin: 0 1em;
+  padding: .25em;
+}
+.oauthContainer div button svg{
+  height: 4em;
+  width: 4em;
+}
+
+/* OTP Input */
+.otpPage{
+  align-content: top;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+.input,
+.badInput{
+  border: none;
+  border-radius: .5em;
+  font-family: "Lato";
+  font-size: 3em;
+  margin: .1em;
+  margin-bottom: 1em;
+  max-width: .75em;
+  padding: .25em;
+  text-align: center;
+  transition-duration: .5s;
+}
+.input{
+  background-color: white;
+}
+.badInput{
+  background-color: #c6a2a2;
+}
+.codeError{
+  transition: opacity 0.5s ease-out;
+  opacity: 0
+}
+.codeErrorActive{
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+
+/* Account Creation Styles */
+.createUser{
+  gap: 1em;
+}
+.createUserElement{
+  display: block;
+}
+.createUserElement h3{
+  padding: .3em 0;
+}
+.accountType{
+  text-align: center;
+  width: 13.5em;
+}
+
+/* Sign Out Buttons */
+.signOutButtons{
+  display: flex;
+  gap: 3em;
+  padding: 1em;
+  justify-content: center;
+  align-items: center;
+}
+.signOutButtons .signout{
+  background: #b9c9ae;
+}
+.signOutButtons .signout:hover{
+  background: #98af88;
+}
+
+/* Mobile */
+@media only screen and (max-width: 428px) {
+  .signOut{
+    margin-top: 2em;
+  }
+  .signOutButtons{
+    flex-direction: column;
+    gap: 1em;
+  }
+  .signOutButtons .signout{
+    background: #aabd9c;
+  }
+  .signOutButtons button{
+    font-size: 1em;
+  }
+  .signOutButtons button:active{
+    font-weight: 600;
+  }
+}

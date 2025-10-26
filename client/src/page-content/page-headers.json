@@ -1,0 +1,26 @@
+{
+  "artists": {
+    "heading": "Our Artists",
+    "subheading": "The amazing artists that are part of the Grassroots family"
+  },
+  "sign-in": {
+    "heading": "Welcome to Grassroots",
+    "subheading": "Grassroots is London's hub for connecting venues, artists and gig-lovers. And we're so happy to have you join us."
+  },
+  "sign-in-otp":{
+    "heading": "Check Your Inbox",
+    "subheading": "We've sent you a verification code - you've got five minutes to enter it so be quick!"
+  },
+  "sign-up":{
+    "heading": "Welcome to Grassroots!",
+    "subheading": "Thanks so much for choosing to become part of our community! To continue, please tell us a bit more about yourself."
+  },
+  "venues": {
+    "heading": "Grassroots Venues",
+    "subheading": "The incredible grassroots venues across London that we are proud to be partnered with"
+  },
+  "venue-list": {
+    "heading": "All Venues",
+    "subheading": "Don't care about location? Have a browse of all of our venues"
+  }
+}

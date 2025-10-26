@@ -1,0 +1,141 @@
+@keyframes gradientAnimation {
+  0% {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,#9bb28c, #a4b896); 
+  }
+  35% {
+    background-color: rgb(255, 255, 255);
+  }
+  100% {
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+/* Sets the style of the header bar - 
+sticky so it stays at the top as the user 
+navigates through the site */
+.headerBar,
+.dropdownList{
+  background-color: transparent;
+  transition: all 1s ease;
+  z-index: 1;
+}
+.headerBar {
+  align-items: center;
+  display: flex;
+  font-family: "DM Serif Display";
+  gap: 2em;
+  max-width: 100vw;
+  padding: 1em 3em;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+.headerBar a,
+.dropdownList div a{
+  font-size: 1.2em;
+  font-family: "DM Serif Display";
+}
+.headerBar a:hover,
+.dropdownList a:hover{
+  text-decoration: underline;
+}
+.headerBar .branding{
+  font-size: 2.5em;
+}
+.headerBar .micIcon{
+  background: none;
+  border: none;
+  padding: 0;
+  margin-left: auto;
+  width: fit-content
+}
+.micIcon svg{
+  font-size: 1.2em;
+}
+
+/* Set the styling for the dropdown items */
+.dropdownList{
+  opacity: 0;
+  padding: .25em 3em 1.5em 1.5em;
+  position: fixed;
+  right: 0;
+  text-align: right;
+  top: 3.5em;
+  visibility: hidden;
+}
+.dropdownList div{
+  display: block;
+  width: fit-content;
+}
+.userScrolled{
+  background-color: white;
+  background-image: none;
+  box-shadow: 0 6px 14px -7px #0000001a;
+}
+/* Set the dropdown content to be visible when 
+the mic icon is hovered over */
+.micIcon:hover + .dropdownList,
+.micIcon:focus-within + .dropdownList,
+.micIcon:focus + .dropdownList,
+.dropdownList:hover,
+.dropdownList div:hover 
+.dropdownVisible{
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Footer */
+.footerBar{
+  background-color: #98af88;
+  display: block;
+  max-height: 8em;
+  padding: 0.5em 3em 0.75em;
+}
+.footerBar p{
+  line-height: 1.3em;
+}
+.contactLine{
+  display: inline-flex;
+  align-items: center;
+}
+.footerBar a{
+  height: .9em;
+  padding-right: .2em;
+}
+
+/* Mobile */
+@media only screen and (max-width: 428px) {
+  .footerBar{
+    padding: 1em;
+    gap: 1.5em;
+  }
+  .footerBar h1{
+    font-size: 1.5em;
+  }
+  .footerBar p{
+    font-size: 1em;
+  }
+  .dropdownList{
+    padding-right: 1em;
+  } 
+  .headerBar{
+    padding: 1em;
+    gap: 1.5em;
+  }
+  .headerBar a{
+    font-size: 1em;
+  }
+  .headerBar .branding{
+    font-size: 1.5em;
+  }
+  .dropdownList{
+    background-color: #9bb28c;
+    padding-right: 1em;
+    padding-top: 0em;
+  }
+  .micIcon{
+    margin-top: .3em;
+    min-height: 1.65em
+  }
+}

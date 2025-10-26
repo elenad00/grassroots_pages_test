@@ -1,0 +1,224 @@
+/* This is a custom version of the leaflet CSS - 
+there are some issues with importing the CSS from the 
+node module, so using this CSS allows for better
+customisation of the map elements */
+
+/* Set the display of the map elements so they show inline */
+.leaflet-bottom,
+.leaflet-container a.leaflet-popup-close-button,
+.leaflet-image-layer,
+.leaflet-layer,
+.leaflet-marker-icon,
+.leaflet-marker-shadow,
+.leaflet-pane,
+.leaflet-pane > svg,
+.leaflet-pane > canvas,
+.leaflet-popup, 
+.leaflet-popup-tip-container,
+.leaflet-tile,
+.leaflet-tile-container,
+.leaflet-zoom-box,
+.leaflet-top {
+	position: absolute;
+}
+
+/* Core Container Style */
+.leaflet-container {
+	font-family: "Lato";
+	font-size: 1rem;
+	height: inherit;
+	line-height: 1;
+  overflow: hidden;
+	width: inherit;
+}
+
+/* Zoom Panel Styles */
+/* Zoom Controls Holder */
+.leaflet-bar {
+  background-color: #ffffff;
+  border: .1em solid #ffffff;
+	border-radius: .3em;
+  display: flex;
+  flex-direction: column;
+  gap: .1em;
+  margin: .6em;
+}
+
+/* Zoom Panel Item */
+.leaflet-bar a {
+	background-color: #c6d8b9de;
+  border-radius: .25em;
+	display: block;
+  font-weight: bold;
+  padding: .2em .4em;
+	text-align: center;
+}
+
+/* Zoom Panel Item On Hover */
+.leaflet-bar a:hover,
+.leaflet-bar a:focus {
+	background-color: #becbb3;
+}
+
+/* Accreditation Style */
+/* Accreditation - stay at bottom */
+.leaflet-bottom {
+	bottom: 0;
+}
+/* set the accreditation panel padding */
+.leaflet-control-attribution,
+.leaflet-control-scale-line {
+  background: #c6d8b9;
+	padding: .2em;
+}
+
+/* underline the accreditation links on hover */
+.leaflet-control-attribution a:hover,
+.leaflet-control-attribution a:focus {
+	text-decoration: underline;
+}
+
+/* set the style for the accreditation flag */
+.leaflet-attribution-flag {
+	height: .69em;
+	width: 1em;
+}
+
+/* Markers */
+/* Set the z-index of the markers so they are always visible, 
+the important flag overrides the leaflet default */
+.leaflet-marker-icon, 
+.leaflet-marker-icon.leaflet-interactive{
+	z-index: 300 !important;
+}
+
+/* Popup */
+/* Set the style for the popup container */
+.leaflet-popup,
+.leaflet-popup .leaflet-zoom-animated {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+	margin-bottom: 3.25em;
+  width: fit-content;
+	z-index: 350;
+}
+
+/* Set the style for the popup box and arrow tip */
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+	background: white;
+	box-shadow: 0 .3em 1em rgba(162, 161, 161, 0.4);
+  flex: 1;
+}
+
+/* Set the style for the popup content wrapper */
+.leaflet-popup-content-wrapper {
+	border-radius: 1em;
+	padding: .25em;
+}
+
+/* Set the style for the popup container */
+.leaflet-popup-content {
+	margin: .75em;
+	min-height: 8em;
+}
+
+/* Set the styling for the popup point container */
+.leaflet-popup-tip-container {
+	height: 1em;
+	overflow: hidden;
+  top: 100%;
+}
+
+/* Set the styling for the popup point */
+.leaflet-popup-tip {
+  /* Browser-based transformations */
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	height: inherit;
+	margin: -.5em .5em;
+	pointer-events: auto;
+	transform: rotate(45deg);
+	width: 1em;
+}
+
+/* Set the style for the popup close button */
+.leaflet-container a.leaflet-popup-close-button {
+	color: #757575;
+	right: .5em;
+	top: .15em;
+}
+
+/* Make the close popup button black when hovered */
+.leaflet-container a.leaflet-popup-close-button:hover,
+.leaflet-container a.leaflet-popup-close-button:focus {
+	color: #000000;
+}
+
+/* Allow the popup to be scrollable */
+.leaflet-popup-scrolled {
+	overflow: auto;
+}
+
+/* Cursor Settings */
+/* Interactive elements */
+.leaflet-interactive {
+	cursor: pointer;
+}
+/* Make the map grabable so the user can move around */
+.leaflet-grab {
+	cursor: -webkit-grab;
+	cursor: -moz-grab;
+	cursor: grab;
+}
+/* Automatically select the cursor */
+.leaflet-popup-pane,
+.leaflet-control {
+	cursor: auto;
+}
+/* Change the cursor when the user is dragging */
+.leaflet-dragging .leaflet-grab,
+.leaflet-dragging .leaflet-grab .leaflet-interactive,
+.leaflet-dragging .leaflet-marker-draggable {
+	cursor: -webkit-grabbing;
+	cursor: -moz-grabbing;
+	cursor: grabbing;
+}
+
+/* Pointer Events Styling */
+.leaflet-marker-icon,
+.leaflet-marker-shadow,
+.leaflet-image-layer,
+.leaflet-pane > svg path,
+.leaflet-tile-container,
+.leaflet-top,
+.leaflet-bottom {
+	pointer-events: none;
+}
+
+.leaflet-control,
+.leaflet-marker-icon.leaflet-interactive,
+.leaflet-image-layer.leaflet-interactive,
+.leaflet-pane > svg path.leaflet-interactive,
+svg.leaflet-image-layer.leaflet-interactive path {
+	pointer-events: visiblePainted;
+}
+
+/* Zoom and Fade Animations */
+/* Popup transition */
+.leaflet-fade-anim .leaflet-popup {
+	transition: opacity 0.2s linear;
+}
+/* Zoom transition */
+.leaflet-zoom-anim .leaflet-zoom-animated {
+	transition: transform 0.25s cubic-bezier(0, 0, 0.25, 1);
+}
+
+@media only screen and (max-width: 428px) {
+	.leaflet-container{
+		font-size: .9em;
+	}
+}

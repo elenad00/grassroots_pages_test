@@ -1,0 +1,70 @@
+/* Artist/Venue Container Styles */
+.cardHolder {
+  align-items: top;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+}
+
+.dataCard {
+  border-radius: 1em;
+  box-sizing: content-box;
+  box-shadow: .5em .5em 1em #98af88;
+  height: fit-content;
+  justify-content: center;
+  padding: 1em;
+  text-decoration: none;
+  width: 25em;
+}
+
+.dataCard img {
+  width: 25em;
+  height: 20em;
+  object-fit: cover;
+  border-radius: 1em;
+  margin-bottom: 1em;
+}
+
+.dataCard p{
+  margin-bottom: .5em;
+}
+
+/* All Venues Map */
+.allVenuesMap{
+  align-items: center;
+  box-shadow: 1em 1em 1em #98af88;
+  height: calc(100vh - 15em);
+  width: 100%;
+}
+
+/* Map Marker Popups */
+.markerPopup h4 {
+  padding-bottom: 0.25em;
+}
+.markerPopup p{
+  padding: .1em 0;
+  margin: 0;
+}
+
+/* Mobile */
+@media only screen and (max-width: 428px) {
+  .allVenuesMap{
+    height: 20em;
+  }
+  .cardHolder{
+    display: block;
+    height: fit-content;
+    align-content: center;
+  }
+  .dataCard{
+    font-size: .9em;
+    margin-left: .5em;
+    margin-bottom: 1em;
+    max-width: 80vw;
+  }
+  .dataCard img{
+    max-width: inherit;
+  }
+}

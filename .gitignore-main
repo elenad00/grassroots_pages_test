@@ -1,0 +1,13 @@
+grassroots.code-workspace
+.vscode/
+package-lock.json
+node_modules/
+.DS_Store
+Config.jsx
+artistImages/
+references/
+*docker*
+.env
+config*
+jsconfig.json
+archive/
